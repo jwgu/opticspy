@@ -11,6 +11,6 @@
 from __future__ import division as __division__
 from . import aperture, interferometer_seidel, interferometer_zenike
 from . import seidel, seidel2, zernike, test, tools, diffraction, jones, gauss
-from . import phaseunwrap, lens, asphere, mplot3d, zernike_rec
+from . import phaseunwrap, lens, asphere, zernike_rec
 import warnings as __warnings__
 __warnings__.filterwarnings("ignore")

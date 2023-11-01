@@ -72,6 +72,6 @@ def fieldcurve(sigma3 = 0.05, sigma4 = -0.05, FNO = 10, H = 20):
 	legend = __plt__.legend(loc='lower left', shadow=True, fontsize='x-large')
 	__plt__.title(r'$\sigma3 = $'+str(round(sigma3,4))+' '+r'$\sigma4 = $'+str(sigma4),fontsize=18)
 	#__plt__.axis([-16, 5, 0, H])
-	__plt__.grid(b=True, which='both', color='0.65',linestyle='--')
+	__plt__.grid(visible=True, which='both', color='0.65',linestyle='--')
 	__plt__.show()
 	return 0

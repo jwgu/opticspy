@@ -21,7 +21,7 @@ def spherical_surf(l1):
 	noise = (__np__.random.rand(len(Z),len(Z))*2-1)*0.05*v_1
 	Z = Z+noise
 	fig = __plt__.figure(figsize=(12, 8), dpi=80)
-	ax = fig.gca(projection='3d')
+	ax = __plt__.axes(projection='3d')
 	surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=__cm__.RdYlGn,\
 								linewidth=0, antialiased=False, alpha = 0.6)
 	v = max(abs(Z.max()),abs(Z.min()))

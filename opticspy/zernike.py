@@ -132,7 +132,7 @@ class Coefficient(object):
 		Y = r*__sin__(u)
 		Z = __interferometer__.__zernikepolar__(self.__coefficients__,r,u)
 		fig = __plt__.figure(figsize=(12, 8), dpi=80)
-		ax = fig.gca(projection='3d')
+		ax = __plt__.axes(projection='3d')
 		surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=__cm__.RdYlGn,
 	        linewidth=0, antialiased=False, alpha = 0.6)
 
@@ -476,7 +476,7 @@ def fitting(Z,n,remain3D=False,remain2D=False,barchart=False,interferogram=False
 	if remain3D == True:
 
 		fig = __plt__.figure(figsize=(12, 8), dpi=80)
-		ax = fig.gca(projection='3d')
+		ax = __plt__.axes(projection='3d')
 		surf = ax.plot_surface(X2, Y2, Z_new, rstride=1, cstride=1, cmap=__cm__.RdYlGn,
 	        linewidth=0, antialiased=False, alpha = 0.6)
 		v = max(abs(Z.max()),abs(Z.min()))

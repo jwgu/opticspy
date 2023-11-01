@@ -63,8 +63,7 @@ def gaussbeam(w0 = 1,P = 5,z0 = 5, z = 10):
 	[x,y] = __np__.meshgrid(x1,y1)
 	wz = w0*__np__.sqrt(1+(z/z0)**2)
 	I = 2*P/__np__.pi/(wz**2)*__np__.exp(-2*(x**2+y**2)/(wz**2))
-	fig = __plt__.figure(figsize=(12, 8), dpi=80)
-	ax = fig.gca(projection='3d')
+	ax = __plt__.figure().add_subplot(projection='3d')
 	surf = ax.plot_surface(x, y, I, rstride=1, cstride=1, cmap=__cm__.RdYlGn,
 		        linewidth=0, antialiased=False, alpha = 0.6)
 	__plt__.title('Gaussian Beam Intensity Distribution',fontsize=18)

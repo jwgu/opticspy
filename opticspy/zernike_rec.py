@@ -58,7 +58,7 @@ class Coefficient(object):
 		[X,Y] = __np__.meshgrid(x1,y1)
 		Z = __zernikecartesian__(self.__coefficients__,a,X,Y)
 		fig = __plt__.figure(figsize=(12, 8), dpi=80)
-		ax = fig.gca(projection='3d')
+		ax = __plt__.axes(projection='3d')
 		surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=__cm__.RdYlGn,
 	        linewidth=0, antialiased=False, alpha = 0.6)
 

@@ -86,7 +86,7 @@ def draw_system(Lens):
             draw_diameter_list[s_index] = max_diameter_list[k]
 
     fig = plt.figure(figsize=(12, 6))
-    fig.canvas.set_window_title('View Lens')
+    fig.canvas.manager.set_window_title('View Lens')
     fig.suptitle('View Lens: '+Lens.lens_name, fontsize="x-large")
     ax = fig.add_subplot(111)
     thinkness_list = []

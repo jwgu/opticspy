@@ -21,7 +21,7 @@ def spotdiagram(Lens,field_plot,wave_plot,n=12,grid_type='grid'):
     c_list = ['b','g','r','c','m','y','k','w']
 
     fig = __plt__.figure(2,figsize=(5, 9), dpi=80)
-    fig.canvas.set_window_title('Spotdiagram')
+    fig.canvas.manager.set_window_title('Spotdiagram')
     fig.suptitle("Spotdiagram", fontsize="x-large")
     m = 0
     tmp = []
@@ -87,7 +87,7 @@ def Ray_fan(Lens,field_plot,wave_plot):
     wave_plot_length = len(wave_plot)
     c_list = ['b','g','r','c','m','y','k','w']
     fig = __plt__.figure(5,figsize=(10, 9), dpi=80)
-    fig.canvas.set_window_title('Ray aberration')
+    fig.canvas.manager.set_window_title('Ray aberration')
     fig.suptitle("Ray aberration: "+Lens.lens_name, fontsize="x-large")
     m = 0
     Py = __np__.linspace(-1,1,25)
@@ -157,7 +157,7 @@ def Y_fan(Lens,field_plot,wave_plot):
 
     c_list = ['b','g','r','c','m','y','k','w']
     fig = __plt__.figure(3,figsize=(5, 9), dpi=80)
-    fig.canvas.set_window_title('Ray aberration')
+    fig.canvas.manager.set_window_title('Ray aberration')
     fig.suptitle("Ray aberration", fontsize="x-large")
 
     m = 0
@@ -213,7 +213,7 @@ def X_fan(Lens,field_plot,wave_plot):
 
     c_list = ['b','g','r','c','m','y','k','w']
     fig = __plt__.figure(4,figsize=(5, 9), dpi=80)
-    fig.canvas.set_window_title('Ray aberration')
+    fig.canvas.manager.set_window_title('Ray aberration')
     fig.suptitle("Ray aberration", fontsize="x-large")
     m = 0
     Px = __np__.linspace(0,1,20)

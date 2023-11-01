@@ -1,10 +1,14 @@
-
-# This fork can by used with python 3.6
+## Updates: 2023/10/31
+1. remove mplot3d subfolder -- many calls of matplotlib are deprecated now.
+2. correct some drawing functions --- (due to deprecated matplotlib function calls)
+3. add ipynb notebooks (from the examples below)
+   
+# This fork can by used with python 3.10
 
 ## To test
 * mkdir /tmp/github/
 * cd /tmp/github/
-* git clone https://github.com/Diti24/opticspy.git
+* git clone https://github.com/jwgu/opticspy.git
 * Add codebase to python path: ```pip install -e opticspy```
 * from opticspy.ray_tracing import *
 The basics is working...
